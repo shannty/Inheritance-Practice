@@ -1,0 +1,40 @@
+public class Newspaper extends Reading {
+
+	private String publisher;
+	private int number_of_articles;
+	
+	public Newspaper(String reading_title, int reading_year, int reading_pages, String paper_publisher, int paper_numArticles)
+	{
+		super(reading_title, reading_year, reading_pages);
+		publisher = paper_publisher;
+		number_of_articles = paper_numArticles;		
+	}
+	
+	public void setPublisher(String paper_publisher)
+	{
+		publisher = paper_publisher;
+	}
+	
+	public String getPublisher()
+	{
+		return publisher;
+	}
+	
+	public void setArticleNumber(int paper_numArticles)
+	{
+		number_of_articles = paper_numArticles;
+	}
+	
+	public int getArticleNumber()
+	{
+		return number_of_articles;
+	}
+	
+	public String toString()
+	{
+		String output = super.toString();
+		output += "Publisher: " + publisher + "\nNumber of Articles: " + number_of_articles + "\n";
+		return output;
+	}
+	
+}
