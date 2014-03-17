@@ -1,0 +1,28 @@
+public class TestReading {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		Novel Animal_Farm = new Novel("Animal Farm", 1945, 176, "George Orwell", "farm", "Napoleon");
+		
+		Textbook AI = new Textbook("Artificial Intelligence: A Modern Approach", 2009, 1152, "Computer Science", "Stuart Russel and Peter Norvig");
+		
+		Newspaper Sun = new Newspaper("The Vancouver Sun", 2014, 12, "Newspaper Group Inc.", 59);
+		
+		System.out.println(Animal_Farm);
+		System.out.println(AI);
+		System.out.println(Sun);
+		
+		Animal_Farm.setMainChar("Boxer");
+		AI.setPages(1150);
+		Sun.setPages(12);
+		
+		System.out.println(Animal_Farm);
+		System.out.println(AI);
+		System.out.println(Sun);
+		
+	}
+
+}
