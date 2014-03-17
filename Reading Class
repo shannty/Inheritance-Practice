@@ -1,0 +1,50 @@
+public class Reading {
+	
+	protected int pages, Year_of_Publication;
+	protected String title;
+	
+	public Reading(String reading_title, int reading_year, int reading_pages)
+	{
+		pages = reading_pages;
+		Year_of_Publication = reading_year;
+		title = reading_title;
+	}
+
+	
+	public void setPages(int reading_pages)		// pages mutator
+	{
+		pages = reading_pages;
+	}
+	
+	public int getPages()						// pages accessor
+	{
+		return pages;
+	}
+	
+	public void setYear(int reading_year)	// Year_of_Publication mutator
+	{
+		Year_of_Publication = reading_year;
+	}
+	
+	public int getYear()						// Year_of_Publication accessor
+	{
+		return Year_of_Publication;
+	}
+	
+	public void setTitle(String reading_title)	// title mutator
+	{
+		title = reading_title;
+	}
+	
+	public String getTitle()					// title accessor
+	{
+		return title;
+	}
+	
+	public String toString()					// Prints all of the information
+	{
+		String information;
+		information = "Title: " + title + "\nPublication Year: " + Year_of_Publication + "\nPages: " + pages + "\n";
+		return information;
+	}
+}
