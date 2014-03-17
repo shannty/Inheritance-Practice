@@ -1,0 +1,50 @@
+public class Textbook extends Reading {
+	
+	private String subject, author;
+	
+	public Textbook(String reading_title, int reading_year, int reading_pages, String text_subject, String text_author)
+	{
+		super(reading_title, reading_year, reading_pages);
+		subject = text_subject;
+		author = text_author;
+	}
+	
+	public void setSubject(String text_subject)
+	{
+		subject = text_subject;
+	}
+	
+	public String getSubject()
+	{
+		return subject;
+	}
+	
+	public void setAuthor(String text_author)
+	{
+		author = text_author;
+	}
+	
+	public String getAuthor()
+	{
+		return author;
+	}
+	
+	public void setPages(int text_pages)
+	{
+		this.pages = text_pages;
+	}
+	
+	public int getPages ()
+	{
+		return pages;
+	}
+	
+	public String toString()
+	{
+		String output = super.toString();
+		output += "Subject: " + subject + "\nAuthor: " + author + "\n";
+		return output;
+	}
+
+
+}
