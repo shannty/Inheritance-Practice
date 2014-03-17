@@ -1,0 +1,49 @@
+public class Novel extends Reading {
+	
+	private String author, location, main_character;
+	
+	public Novel(String reading_title, int reading_year, int reading_pages, String novel_author, String novel_location, String novel_main_character)
+	{
+		super(reading_title, reading_year, reading_pages);
+		author = novel_author;
+		location = novel_location;
+		main_character = novel_main_character;
+	}
+
+	public void setAuthor(String novel_author)
+	{
+		author = novel_author;
+	}
+	
+	public String getAuthor()
+	{
+		return author;
+	}
+	
+	public void setLocation(String novel_location)
+	{
+		location = novel_location;
+	}
+	
+	public String getLocation()
+	{
+		return location;
+	}
+	
+	public void setMainChar(String novel_main_character)
+	{
+		main_character = novel_main_character;
+	}
+	
+	public String getMainChar()
+	{
+		return main_character;
+	}
+	
+	public String toString()
+	{
+		String output = super.toString();
+		output += "Author: " + author + "\nSetting: " + location + "\nMain Character: " + main_character + "\n";
+		return output;
+	}
+}
